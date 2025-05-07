@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./styles.css";
 
+import type1 from './img/1.svg';
+import type2 from './img/2.svg';
+import type3 from './img/3.svg';
+
 const objectTypes = [
-    { type: "Железный брусок", weight: 2 },
-    { type: "Кирпич", weight: 1.5 },
-    { type: "Академик", weight: 3 }
+    { type: 1, weight: 2, },
+    { type: 2, weight: 1.5 },
+    { type: 3, weight: 3 }
 ];
 
 export default function BridgeSimulation() {
@@ -13,11 +17,25 @@ export default function BridgeSimulation() {
     const [totalWeight, setTotalWeight] = useState(0);
     const [clickCount, setClickCount] = useState(0);
 
+    const getImageByType = (type) => {
+        switch (type) {
+            case 1: return type1;
+            case 2: return type2;
+            case 3: return type3;
+            default: return '';
+        }
+    };
+
     const addObject = () => {
         if (clickCount >= 30) return;
+
         const index = Math.floor(clickCount / 10);
-        const newObject = objectTypes[index];
-        console.log(newObject);
+        const newObject = {
+            ...objectTypes[index],
+            x: Math.random() * 90, // в процентах от ширины, 0%–90%
+            id: Date.now() + Math.random()
+        };
+
         setObjects([...objects, newObject]);
         setTotalWeight(totalWeight + newObject.weight);
         setClickCount(clickCount + 1);
@@ -42,12 +60,22 @@ export default function BridgeSimulation() {
                 </div>
                 {objects.map((obj, index) => (
                     <motion.div
-                        key={index}
+                        key={obj.id}
                         className="falling-object"
-                        initial={{y: -50}}
-                        animate={{y: 0}}
+                        initial={{ y: -50 }}
+                        animate={{ y: 0 }}
+                        style={{
+                            position: 'absolute',
+                            left: `${obj.x}%`,
+                            bottom: '0px',
+                        }}
                     >
-                        <p>{obj.type}</p>
+                        <img
+                            src={getImageByType(obj.type)}
+                            alt={`type ${obj.type}`}
+                            width={150}
+                            height={150}
+                        />
                     </motion.div>
                 ))}
             </div>

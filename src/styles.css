@@ -47,8 +47,6 @@ body {
 .falling-object {
     width: 100px;
     height: 30px;
-    background: #ff7043;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;

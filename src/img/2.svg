@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.46 283.46">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #191919;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 9.16;
+      }
+
+      .cls-1, .cls-4, .cls-6 {
+        stroke-width: 1.14px;
+      }
+
+      .cls-2 {
+        stroke-width: 1.14px;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        stroke: #1f1f1f;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-5 {
+        stroke-width: 1.14px;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #1a1a1a;
+      }
+
+      .cls-5 {
+        fill: url(#_Безымянный_градиент_14);
+      }
+
+      .cls-6 {
+        fill: url(#_Безымянный_градиент_13);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_13" data-name="Безымянный градиент 13" x1="-325.68" y1="185.83" x2="-388.91" y2="185.52" gradientTransform="translate(960.08 570.77) scale(2.29 -2.29)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#202020"/>
+      <stop offset="1" stop-color="#9b9b9b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_14" data-name="Безымянный градиент 14" x1="-341.14" y1="199.05" x2="-375.94" y2="191.01" gradientTransform="translate(960.08 570.77) scale(2.29 -2.29)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".21"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1">
+    <g id="layer1-2">
+      <path id="path7-1" class="cls-4" d="M69.81,152.29l42.19,18.24,101.62-23.52-14.25-26.51-88.51,17.53-29.64-10.83-11.4,25.08Z"/>
+      <path id="path8-6" class="cls-1" d="M111.42,137.47l1.14,33.64"/>
+      <path id="path9-8" class="cls-2" d="M81.06,127.07l85.58-14.7,32.72,7.98"/>
+      <path id="path24-7" class="cls-3" d="M81.64,127.07l29.93,11.4,87.51-17.82-32.35-8.27-85.09,14.68Z"/>
+    </g>
+    <path id="path7" class="cls-6" d="M69.85,152.27l42.19,18.24,101.62-23.52-14.25-26.51-88.51,17.53-29.64-10.83-11.4,25.08Z"/>
+    <path id="path8" class="cls-1" d="M111.47,137.45l1.14,33.64"/>
+    <path id="path9" class="cls-2" d="M81.11,127.05l85.58-14.7,32.72,7.98"/>
+    <path id="path24" class="cls-5" d="M81.68,127.05l29.93,11.4,87.51-17.82-32.35-8.27-85.09,14.68Z"/>
+  </g>
+</svg>
